@@ -42,7 +42,7 @@ jobs:
           -   uses: actions/setup-node@v3
               with:
                 node-version: ${{ matrix.node }}
-          -   uses: actions/download-artifact@v4
+          -   uses: actions/download-artifact@v4.1.7
               with:
                 name: web3-${{ matrix.node }}.js.tar.gz
                 path: /tmp
@@ -59,7 +59,7 @@ jobs:
           -   uses: actions/setup-node@v3
               with:
                 node-version: ${{ matrix.node }}
-          -   uses: actions/download-artifact@v4
+          -   uses: actions/download-artifact@v4.1.7
               with:
                 name: web3-${{ matrix.node }}.js.tar.gz
                 path: /tmp
@@ -73,7 +73,7 @@ jobs:
           -   uses: actions/setup-node@v3
               with:
                 node-version: 18
-          -   uses: actions/download-artifact@v4
+          -   uses: actions/download-artifact@v4.1.7
               with:
                 name: web3-18.js.tar.gz
                 path: /tmp
@@ -88,7 +88,7 @@ jobs:
         -   uses: actions/setup-node@v3
             with:
               node-version: 18
-        -   uses: actions/download-artifact@v4
+        -   uses: actions/download-artifact@v4.1.7
             with:
               name: web3-18.js.tar.gz
               path: /tmp
@@ -128,7 +128,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: web3-${{ matrix.node }}.js.tar.gz
           path: /tmp
@@ -158,7 +158,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: web3-${{ matrix.node }}.js.tar.gz
           path: /tmp
@@ -183,7 +183,7 @@ jobs:
       -   uses: actions/setup-node@v3
           with:
             node-version: ${{ matrix.node }}
-      -   uses: actions/download-artifact@v4
+      -   uses: actions/download-artifact@v4.1.7
           with:
             name: web3-${{ matrix.node }}.js.tar.gz
             path: /tmp
@@ -206,7 +206,7 @@ jobs:
             node-version: ${{ matrix.node }}
       - uses: browser-actions/setup-firefox@latest
         if: matrix.browser == 'firefox'
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: web3-${{ matrix.node }}.js.tar.gz
           path: /tmp
@@ -230,7 +230,7 @@ jobs:
         -   uses: actions/setup-node@v3
             with:
                 node-version: ${{ matrix.node }}
-        -   uses: actions/download-artifact@v4
+        -   uses: actions/download-artifact@v4.1.7
             with:
                 name: web3-${{ matrix.node }}.js.tar.gz
                 path: /tmp
@@ -248,7 +248,7 @@ jobs:
           -   uses: actions/setup-node@v3
               with:
                   node-version: ${{ matrix.node }}
-          -   uses: actions/download-artifact@v4
+          -   uses: actions/download-artifact@v4.1.7
               with:
                   name: web3-${{ matrix.node }}.js.tar.gz
                   path: /tmp
